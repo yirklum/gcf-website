@@ -86,32 +86,6 @@ $(function(){
       {latLng: [31.95, 35.93], name: 'Amman'}
     ],
 
-    // series: {
-    //   regions: [{
-    //     values: {
-    //       US: "United States",
-    //       DK: "Denmark",
-    //       FR: "France",
-    //       GR: "Greece",
-    //       JP: "Japan",
-    //       KW: "Kuwait",
-    //       SA: "Saudi Arabia",
-    //       AE: "United Arab Emirate",
-    //       GB: "United Kingdom"
-    //     },
-    //     scale: {
-    //       "United States": "blue",
-    //       "Denmark": "blue",
-    //       "France": "blue",
-    //       "Greece": "blue",
-    //       "Japan": "blue",
-    //       "Kuwait": "blue",
-    //       "Saudi Arabia": "blue",
-    //       "United Arab Emirates": "blue",
-    //       "United Kingdom": "blue"
-    //     }
-    //   }]
-    // },
     onRegionTipShow: function (e, el, code) {
       e.preventDefault();
     },

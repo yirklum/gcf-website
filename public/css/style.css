@@ -1,3 +1,7 @@
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
 body {
     opacity: 1;
     transition: 2s opacity;
@@ -9,20 +13,13 @@ body.fade-out {
     transition: none;
 }
 
-
 .bar {
-    margin-top: 8px;
     color: lightgrey;
 }
 
 .navbar {
-    /* text-transform: uppercase; */
     font-family: 'Dosis', sans-serif;
-    font-size: 18px;
-    letter-spacing: 3px;
-    margin-bottom: 3%;
     background-color: black;
-    height: 40px;
 }
 
 .navbar a {
@@ -35,7 +32,6 @@ body.fade-out {
 
 .dropdown-menu {
     background-color: #000000;
-    margin-left: 7%;
     text-align: center;
 }
 
@@ -44,160 +40,89 @@ body.fade-out {
     text-align: center;
 }
 
-@media (min-width: 768px){
-    .navbar-nav {
-        margin: 0 auto;
-        display: table;
-        table-layout: auto;
-        float: none;
-        width: 100%;
+.navbar-nav {
+    margin: 0 auto;
+    display: table;
+    table-layout: auto;
+    float: none;
+    width: 100%;
     }
 
-    .navbar-nav>li {
-        display: table-cell;
-        float: none;
-        text-align: center;
-        color: white;
-    }
-}
-
-.logo {
-    width: 40%;
-    margin-left: 28%;
+.navbar-nav>li {
+    display: table-cell;
+    float: none;
+    text-align: center;
+    color: white;
 }
 
 footer {
     background-color: #000000;
     color: white;
-    margin-top: 10%;
-    width: 100%;
-    padding: 15px;
 }
 
 .footer-text {
     text-align: center;
     font-family: 'Dosis', sans-serif;
-    font-size: 18px;
-    padding-left:5%;
 }
-
-.copyright {
-    padding-top: 35px;
-}
-
-.contact-info {
-  padding-top: 15px;
-}
-
 
 /* Homepage */
 
 .concept {
-    width: 54%;
-    margin-left: 21%;
     text-align: center;
     font-family: 'Dosis', sans-serif;
-    font-size: 20px;
-    margin-bottom: 40px;
-}
-
-hr {
-    width: 45%;
-}
-
-#world-map {
-    width: 100%; 
-    height: 100%;
-    padding-top: 30px;
-    padding-right: 170px;
-    
 }
 
 #city-background {
     background-image: url("../images/step-and-repeat.png");
-    height: 515px;
-    width: 100%;
 }
 
   #services img {
     border: 2px solid black;
-    width: 33%;
-    margin-top: 50px;
     display: inline-block;
-    margin-left: 10%;
     text-align: center;
 }
 
 .service-options {
     font-family: 'Dosis', sans-serif;
-    font-size: 20px;
-    margin-top: 75px;
-    width: 85%;
-    margin-left: 8%;
 }
 
 .service-options h2 {
     text-decoration: underline;
-    margin-bottom: 15px;
 }
 
-  /* Contact Page */
+/* Contact Page */
 
-  .contact-form {
-      width: 75%;
-      margin-left: 12%;
-      margin-top: 5%;
-      background-color: black;
-      color: white;
-      border-radius: 25px;
-      font-family: 'Playfair Display SC', serif;
-      padding: 20px 0px;
-  }
+.contact-form {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    font-family: 'Playfair Display SC', serif;
+}
 
-  form {
-      padding: 20px 25px;
-      width: 80%;
-      margin-left: 12%;
-  }
+.form-title {
+    text-align: center;
+}
 
-  .form-title {
-      text-align: center;
-      padding-top: 35px;
-  }
-
-  .form-directions {
-      width: 75%;
-      margin-left: 15%;
-      margin-top: 2%;
-  }
-
-  #submit {
+#submit {
     background-color: #004d00;
-    margin-top: 5px;
-  }
-
+}
 
 /* Editing */
 
 .container {
     margin: 0 auto;
-    font-size: 20px;
     font-family: 'Dosis', sans-serif;
 }
 
 ul {
     list-style-type: square;
-    margin-left: 100px;
-    /* line-height: 40px; */
 }
 
 .container h2 {
     text-align: center;
-    margin-bottom: 25px;
 }
+
 .left-column {
-    /* line-height: 55px; */
-    margin-right: 25px;
     opacity: 1;
     position: relative;
     -webkit-animation-name: text-slide-left; /* Safari 4.0 - 8.0 */
@@ -219,8 +144,6 @@ ul {
 }
 
 .right-column {
-    margin-bottom: 25px;
-    margin-top: 20px;
     opacity: 1;
     position: relative;
     -webkit-animation-name: text-slide-right; /* Safari 4.0 - 8.0 */
@@ -263,8 +186,6 @@ ul {
 }
 
 .left-column-2 {
-    /* line-height: 55px; */
-    margin-right: 25px;
     opacity: 1;
     position: relative;
     -webkit-animation-name: text-slide-left-2; /* Safari 4.0 - 8.0 */
@@ -274,7 +195,6 @@ ul {
 }
 
 .left-column-3 {
-    margin-right: 25px;
     opacity: 1;
     position: relative;
     -webkit-animation-name: text-slide-left-2; /* Safari 4.0 - 8.0 */
@@ -297,7 +217,6 @@ ul {
 
 .coaching-services {
     margin-left: 1%;
-    /* line-height: 50px; */
     opacity: 1;
     position: relative;
     -webkit-animation-name: text-slide-bottom-2; /* Safari 4.0 - 8.0 */
@@ -318,19 +237,14 @@ ul {
     100% {opacity: 100%; left:0px; top:0px;}
 }
 
-
 #confirmation {
     position: relative;
     background-color: black;
-    width: 48%;
     color: white;
-    margin-left: 23%;
-    height: 60%;
     border-radius: 8px;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
     font-family: 'Dosis', sans-serif;
-    font-size: 20px;
 }
 
 /* Add animation (fade in the popup) */
@@ -344,14 +258,1035 @@ ul {
     to {opacity:1 ;}
 }
 
-
 #popuptext {
-    padding: 35px;
     text-align: center;
 }
 
 #popuptext a {
-    margin: 35px;
     background-color: #004d00;
-    font-size: 18px;
+}
+
+
+/* Mobile Phones */
+
+@media(min-width: 320px) {
+  /* small portrait screens */
+
+    .bar {
+        margin-top: 8px;
+    }
+
+    .navbar {
+        font-size: 14px;
+        letter-spacing: 3px;
+        margin-bottom: 3%;
+        height: 40px;
+    }
+
+    .dropdown-menu {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    footer {
+        margin-top: 10%;
+        padding: 15px;
+    }
+
+    .footer-text {
+        font-size: 16px;
+        padding-left:5%;
+    }
+
+    .copyright {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .contact-info {
+        padding-top: 15px;
+    }
+
+    /* Homepage */
+
+    .concept {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 18px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    hr {
+        width: 75%;
+    }
+
+    #world-map {
+        width: 100%; 
+        height: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #city-background {
+        height: 200px;
+        width: 100%;
+    }
+
+    #services img {
+        width: 75%;
+        margin-top: 35px;
+        margin-left: 10%;
+    }
+
+    .service-options {
+        font-size: 18px;
+        margin-top: 45px;
+        width: 85%;
+        margin-left: 8%;
+    }
+
+    .service-options ul {
+        margin-left: 45px;
+        margin-top: 15px;
+    }
+
+    .service-options h2 {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    /* Contact Page */
+
+    .contact-form {
+        width: 75%;
+        margin-left: 12%;
+        margin-top: 5%;
+        border-radius: 25px;
+        padding: 20px 0px;
+    }
+
+    form {
+        padding: 20px 25px;
+        width: 80%;
+        margin-left: 12%;
+    }
+
+    .form-title {
+        padding-top: 35px;
+    }
+
+    .form-directions {
+        width: 75%;
+        margin-left: 15%;
+        margin-top: 2%;
+    }
+
+    #submit {
+        margin-top: 5px;
+    }
+
+    /* Editing */
+
+    .container {
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    ul {
+        margin-left: 100px;
+    }
+
+    .container h2 {
+        margin-bottom: 25px;
+    }
+
+    .left-column {
+        margin-right: 25px;
+    }
+
+    .right-column {
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+
+    .left-column-2 {
+        margin-right: 25px;
+    }
+
+    .left-column-3 {
+        margin-right: 25px;
+    }
+
+    .coaching-services {
+        margin-left: 1%;
+    }
+
+    #confirmation {
+        width: 48%;
+        margin-left: 23%;
+        height: 60%;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+        font-size: 20px;
+    }
+
+    #popuptext {
+        padding: 35px;
+    }
+
+    #popuptext a {
+        margin: 35px;
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 480px) {
+  /* large portrait screens */
+    .bar {
+        margin-top: 8px;
+    }
+
+    .navbar {
+        font-size: 16px;
+        letter-spacing: 3px;
+        margin-bottom: 3%;
+        height: 40px;
+    }
+
+    .dropdown-menu {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 60%;
+        margin-left: 18%;
+    }
+
+    footer {
+        margin-top: 10%;
+        padding: 15px;
+    }
+
+    .footer-text {
+        font-size: 16px;
+        padding-left: 5%;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .contact-info {
+        padding-top: 15px;
+    }
+
+    /* Homepage */
+
+    .concept {
+        width: 75%;
+        margin-left: 11%;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    hr {
+        width: 75%;
+    }
+
+    #world-map {
+        width: 100%; 
+        height: 100%;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #city-background {
+        height: 235px;
+        width: 100%;
+    }
+
+    #services img {
+        width: 55%;
+        margin-top: 20px;
+        margin-left: 20%;
+    }
+
+    .service-options {
+        font-size: 18px;
+        margin-top: 35px;
+        width: 85%;
+        margin-left: 8%;
+    }
+
+    .service-options h2 {
+        margin-bottom: 15px;
+    }
+
+    /* Contact Page */
+
+    .contact-form {
+        width: 75%;
+        margin-left: 12%;
+        margin-top: 5%;
+        border-radius: 25px;
+        padding: 20px 0px;
+    }
+
+    form {
+        padding: 20px 25px;
+        width: 80%;
+        margin-left: 12%;
+    }
+
+    .form-title {
+        padding-top: 35px;
+    }
+
+    .form-directions {
+        width: 75%;
+        margin-left: 15%;
+        margin-top: 2%;
+    }
+
+    #submit {
+        margin-top: 5px;
+    }
+
+    /* Editing */
+
+    .container {
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    ul {
+        margin-left: 100px;
+    }
+
+    .container h2 {
+        margin-bottom: 25px;
+    }
+
+    .left-column {
+        margin-right: 25px;
+    }
+
+    .right-column {
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+
+    .left-column-2 {
+        margin-right: 25px;
+    }
+
+    .left-column-3 {
+        margin-right: 25px;
+    }
+
+    .coaching-services {
+        margin-left: 1%;
+    }
+
+    #confirmation {
+        width: 48%;
+        margin-left: 23%;
+        height: 60%;
+        font-size: 20px;
+    }
+
+    #popuptext {
+        padding: 35px;
+    }
+
+    #popuptext a {
+        margin: 35px;
+        font-size: 18px;
+    } 
+}
+
+@media(min-width: 640px) {
+  /* landscape view */  
+
+    .bar {
+        margin-top: 8px;
+    }
+
+    .navbar {
+        font-size: 18px;
+        letter-spacing: 3px;
+        margin-bottom: 3%;
+        height: 40px;
+    }
+
+    .dropdown-menu {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 50%;
+        margin-left: 23%;
+    }
+
+    footer {
+        margin-top: 10%;
+        padding: 15px;
+    }
+
+    .footer-text {
+        font-size: 18px;
+        padding-left:5%;
+    }
+
+    .copyright {
+        padding-top: 25px;
+    }
+
+    .contact-info {
+        padding-top: 15px;
+    }
+
+    /* Homepage */
+
+    .concept {
+        width: 75%;
+        margin-left: 14%;
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+
+    hr {
+        width: 75%;
+    }
+
+    #world-map {
+        width: 100%; 
+        height: 100%;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #city-background {
+        height: 300px;
+        width: 100%;
+    }
+
+    #services img {
+        width: 50%;
+        margin-top: 30px;
+        margin-left: 24%;
+    }
+
+    .service-options {
+        font-size: 20px;
+        margin-top: 45px;
+        width: 85%;
+        margin-left: 8%;
+    }
+
+    .service-options h2 {
+        margin-bottom: 15px;
+    }
+
+    /* Contact Page */
+
+    .contact-form {
+        width: 75%;
+        margin-left: 12%;
+        margin-top: 5%;
+        border-radius: 25px;
+        padding: 20px 0px;
+    }
+
+    form {
+        padding: 20px 25px;
+        width: 80%;
+        margin-left: 12%;
+    }
+
+    .form-title {
+        padding-top: 35px;
+    }
+
+    .form-directions {
+        width: 75%;
+        margin-left: 15%;
+        margin-top: 2%;
+    }
+
+    #submit {
+        margin-top: 5px;
+    }
+
+    /* Editing */
+
+    .container {
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    ul {
+        margin-left: 100px;
+    }
+
+    .container h2 {
+        margin-bottom: 25px;
+    }
+
+    .left-column {
+        margin-right: 25px;
+    }
+
+    .right-column {
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+
+    .left-column-2 {
+        margin-right: 25px;
+    }
+
+    .left-column-3 {
+        margin-right: 25px;
+    }
+
+    .coaching-services {
+        margin-left: 1%;
+    }
+
+    #confirmation {
+        width: 48%;
+        margin-left: 23%;
+        height: 60%;
+        font-size: 20px;
+    }
+
+    #popuptext {
+        padding: 35px;
+    }
+
+    #popuptext a {
+        margin: 35px;
+        font-size: 18px;
+    }
+
+}
+
+/* Tablets */
+
+@media (min-width: 768px) {
+    /* tablet portrait */
+    
+    .bar {
+        margin-top: 8px;
+    }
+
+    .navbar {
+        font-size: 18px;
+        letter-spacing: 3px;
+        margin-bottom: 3%;
+        height: 40px;
+    }
+
+    .dropdown-menu {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 50%;
+        margin-left: 24%;
+    }
+
+    footer {
+        margin-top: 10%;
+        padding: 15px;
+    }
+
+    .footer-text {
+        font-size: 18px;
+        padding-left: 5%;
+    }
+
+    .copyright {
+        padding-top: 15px;
+    }
+
+    .contact-info {
+        padding-top: 15px;
+    }
+
+    .social-media {
+        padding-top: 15px;
+    }
+
+    /* Homepage */
+
+    .concept {
+        width: 65%;
+        margin-left: 18%;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    hr {
+        width: 65%;
+    }
+
+    #world-map {
+        width: 100%; 
+        height: 100%;
+        padding-top: 30px;
+        padding-right: 10px;
+    }
+
+    #city-background {
+        height: 400px;
+        width: 100%;
+    }
+
+    #services img {
+        width: 45%;
+        margin-top: 30px;
+        margin-left: 27%;
+    }
+
+    .service-options {
+        font-size: 20px;
+        margin-top: 55px;
+        width: 85%;
+        margin-left: 8%;
+    }
+
+    .service-options ul {
+        margin-left: 75px;
+    }
+
+    .service-options h2 {
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+
+    /* Contact Page */
+
+    .contact-form {
+        width: 75%;
+        margin-left: 12%;
+        margin-top: 5%;
+        border-radius: 25px;
+        padding: 20px 0px;
+    }
+
+    form {
+        padding: 20px 25px;
+        width: 80%;
+        margin-left: 12%;
+    }
+
+    .form-title {
+        padding-top: 35px;
+    }
+
+    .form-directions {
+        width: 75%;
+        margin-left: 15%;
+        margin-top: 2%;
+    }
+
+    #submit {
+        margin-top: 5px;
+    }
+
+    /* Editing */
+
+    .container {
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    ul {
+        margin-left: 100px;
+    }
+
+    .container h2 {
+        margin-bottom: 25px;
+    }
+
+    .left-column {
+        margin-right: 25px;
+    }
+
+    .right-column {
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+
+    .left-column-2 {
+        margin-right: 25px;
+    }
+
+    .left-column-3 {
+        margin-right: 25px;
+    }
+
+    .coaching-services {
+        margin-left: 1%;
+    }
+
+    #confirmation {
+        width: 48%;
+        margin-left: 23%;
+        height: 60%;
+        font-size: 20px;
+    }
+
+    #popuptext {
+        padding: 35px;
+    }
+
+    #popuptext a {
+        margin: 35px;
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 1024px) {
+    /* tablet landscape */
+    
+    .bar {
+        margin-top: 8px;
+    }
+
+    .navbar {
+        font-size: 18px;
+        letter-spacing: 3px;
+        margin-bottom: 3%;
+        height: 40px;
+    }
+
+    .dropdown-menu {
+        margin-left: 7%;
+    }
+
+    .logo {
+        width: 45%;
+        margin-left: 27%;
+    }
+
+    footer {
+        margin-top: 10%;
+        padding: 15px;
+    }
+
+    .footer-text {
+        font-size: 18px;
+        padding-left:5%;
+    }
+
+    .copyright {
+        padding-top: 35px;
+    }
+
+    .contact-info {
+        padding-top: 15px;
+    }
+
+    /* Homepage */
+
+    .concept {
+        width: 54%;
+        margin-left: 21%;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    hr {
+        width: 55%;
+    }
+
+    #world-map {
+        width: 100%; 
+        height: 100%;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    #city-background {
+        height: 515px;
+        width: 100%;
+    }
+
+    #services img {
+        width: 35%;
+        margin-top: 40px;
+        margin-left: 10%;
+    }
+
+    .service-options {
+        font-size: 20px;
+        margin-top: 55px;
+        width: 85%;
+        margin-left: 8%;
+    }
+
+    .service-options h2 {
+        margin-bottom: 15px;
+    }
+
+    /* Contact Page */
+
+    .contact-form {
+        width: 75%;
+        margin-left: 12%;
+        margin-top: 5%;
+        border-radius: 25px;
+        padding: 20px 0px;
+    }
+
+    form {
+        padding: 20px 25px;
+        width: 80%;
+        margin-left: 12%;
+    }
+
+    .form-title {
+        padding-top: 35px;
+    }
+
+    .form-directions {
+        width: 75%;
+        margin-left: 15%;
+        margin-top: 2%;
+    }
+
+    #submit {
+        margin-top: 5px;
+    }
+
+    /* Editing */
+
+    .container {
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    ul {
+        margin-left: 100px;
+    }
+
+    .container h2 {
+        margin-bottom: 25px;
+    }
+
+    .left-column {
+        margin-right: 25px;
+    }
+
+    .right-column {
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+
+    .left-column-2 {
+        margin-right: 25px;
+    }
+
+    .left-column-3 {
+        margin-right: 25px;
+    }
+
+    .coaching-services {
+        margin-left: 1%;
+    }
+
+    #confirmation {
+        width: 48%;
+        margin-left: 23%;
+        height: 60%;
+        font-size: 20px;
+    }
+
+    #popuptext {
+        padding: 35px;
+    }
+
+    #popuptext a {
+        margin: 35px;
+        font-size: 18px;
+    }
+}
+
+/* Desktops/Laptops */
+
+@media (min-width: 1280px) {
+    /* desktop view */
+
+    .bar {
+        margin-top: 8px;
+    }
+
+    .navbar {
+        font-size: 18px;
+        letter-spacing: 3px;
+        margin-bottom: 3%;
+        height: 40px;
+    }
+
+    .dropdown-menu {
+        margin-left: 7%;
+    }
+
+    .logo {
+        width: 40%;
+        margin-left: 28%;
+    }
+
+    footer {
+        margin-top: 10%;
+        padding: 15px;
+    }
+
+    .footer-text {
+        font-size: 18px;
+        padding-left:5%;
+    }
+
+    .copyright {
+        padding-top: 35px;
+    }
+
+    .contact-info {
+        padding-top: 15px;
+    }
+
+    /* Homepage */
+
+    .concept {
+        width: 54%;
+        margin-left: 21%;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    hr {
+        width: 45%;
+    }
+
+    #world-map {
+        width: 100%; 
+        height: 100%;
+        padding-top: 30px;
+        padding-right: 170px;
+    }
+
+    #city-background {
+        height: 515px;
+        width: 100%;
+    }
+
+    #services img {
+        width: 33%;
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+
+    .service-options {
+        font-size: 20px;
+        margin-top: 75px;
+        width: 85%;
+        margin-left: 8%;
+    }
+
+    .service-options h2 {
+        margin-bottom: 15px;
+    }
+
+    /* Contact Page */
+
+    .contact-form {
+        width: 75%;
+        margin-left: 12%;
+        margin-top: 5%;
+        border-radius: 25px;
+        padding: 20px 0px;
+    }
+
+    form {
+        padding: 20px 25px;
+        width: 80%;
+        margin-left: 12%;
+    }
+
+    .form-title {
+        padding-top: 35px;
+    }
+
+    .form-directions {
+        width: 75%;
+        margin-left: 15%;
+        margin-top: 2%;
+    }
+
+    #submit {
+        margin-top: 5px;
+    }
+
+    /* Editing */
+
+    .container {
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    ul {
+        margin-left: 100px;
+    }
+
+    .container h2 {
+        margin-bottom: 25px;
+    }
+
+    .left-column {
+        margin-right: 25px;
+    }
+
+    .right-column {
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+
+    .left-column-2 {
+        margin-right: 25px;
+    }
+
+    .left-column-3 {
+        margin-right: 25px;
+    }
+
+    .coaching-services {
+        margin-left: 1%;
+    }
+
+    #confirmation {
+        width: 48%;
+        margin-left: 23%;
+        height: 60%;
+        font-size: 20px;
+    }
+
+    #popuptext {
+        padding: 35px;
+    }
+
+    #popuptext a {
+        margin: 35px;
+        font-size: 18px;
+    }
 }
